@@ -1,0 +1,48 @@
+CREATE TABLE student (
+        student_id INT,
+        name VARCHAR(20),
+        major VARCHAR(20),
+        PRIMARY KEY(student_id)
+);
+
+DESCRIBE student;
+
+ALTER TABLE student ADD gpa DECIMAL(3,2);
+
+ALTER TABLE student DROP COLUMN gpa;
+
+### Describe table
+DESCRIBE student;
+
+### Inert a row into the <table_name>
+INSERT INTO student VALUES(1, 'Jack', 'Biology');
+
+### Print all rows from the <table_name>
+SELECT * FROM student;
+
+INSERT INTO student VALUES(2, 'Kate', 'Sociology');
+INSERT INTO student(student_id, name) VALUES(3, 'Claire');
+
+INSERT INTO student VALUES(4, 'Jack', 'Biology');
+INSERT INTO student VALUES(5, 'Mike', 'Computer Science');
+
+### Drop the table, to create more efficient approach
+DROP TABLE student;
+
+### Drop the <table_name>, to create more efficient approach
+DROP TABLE student;
+
+### Create <table_name> with constrains
+CREATE TABLE student (
+        student_id INT AUTO_INCREMENT,
+        name VARCHAR(20) NOT NULL,
+        major VARCHAR(20) UNIQUE,
+        PRIMARY KEY(student_id)
+);
+
+### Insert a row into the <table_name>
+INSERT INTO student(name, major) VALUES('Jack', 'Biology');
+
+INSERT INTO student(name, major) VALUES('Kate', 'Sociology');
+
+SELECT * FROM student;
