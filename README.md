@@ -10,7 +10,7 @@ some MySQL clients' setups as well.
 
 There are also some clients' examples presented in this repo.
 
-I will try the native MySQL client called PopSQL. Also I will
+I installed the native MySQL client called PopSQL. Also I will
 try to install and use another MySQL client based on Python3's
 connector using pip (phyton installer program) as an installer.
 
