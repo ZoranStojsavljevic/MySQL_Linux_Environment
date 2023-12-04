@@ -16,4 +16,4 @@ def create_server_connection(host_name, user_name, user_password):
 
 	return connection
 
-connection = create_server_connection('127.0.0.1', 'root', 'password')
+connection = create_server_connection('127.0.0.1', 'root', 'Password_7')

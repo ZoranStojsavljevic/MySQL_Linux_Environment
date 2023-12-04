@@ -1,4 +1,4 @@
-### PopSQL Client Installation
+### PopSQL Client IDE Installation
 
 Please, go to the PopSQL home page, to get familiar with MySQL
 native client.

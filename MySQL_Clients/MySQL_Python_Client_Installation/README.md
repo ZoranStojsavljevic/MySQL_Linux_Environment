@@ -40,6 +40,15 @@ applications and its dependencies during deployment.
 	Successfully installed connect-0.2
 	[vuser@fedora39-ssd-2TB ~]$
 
+#### Using normal Python shell
+
+Please, do note that I did NOT use any MySQL Python Client IDE,
+rather using normal Python shell. As for now prefering a Python
+Client minimal environment.
+
+I potentially might introduce Python Client IDE for Fedora
+(later). Maybe/if?
+
 ### MySQL Python Client Verification
 
 #### The initial test program for MySQL python client verification
@@ -62,7 +71,7 @@ applications and its dependencies during deployment.
 
 		return connection
 
-	connection = create_server_connection('127.0.0.1', 'root', 'password')
+	connection = create_server_connection('127.0.0.1', 'root', 'Password_7')
 
 #### The test program results
 

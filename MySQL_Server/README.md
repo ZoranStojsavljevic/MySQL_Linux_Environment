@@ -202,7 +202,7 @@ the MySQL server environment (ONLY bare minimum for now):
 
 	[vuser@fedora39-ssd-2TB:/var/lib/mysql]$ mysql -uroot -p
 
-	Enter password: 
+	Enter password:
 	Welcome to the MySQL monitor.  Commands end with ; or \g.
 	Your MySQL connection id is 8
 	Server version: 8.0.35 Source distribution
@@ -219,7 +219,19 @@ the MySQL server environment (ONLY bare minimum for now):
 	/var/lib/mysql
 	mysql>
 
-### [10] Removing MySQL server
+### [10] Changing password
+
+	### Enter MySQL server via CLI:
+	[vuser@fedora39-ssd-2TB:/var/lib/mysql]$ mysql -uroot -p
+
+	### For mysql database server version 5.7.6 or newer use the following syntax:
+	ALTER USER 'user'@'hostname' IDENTIFIED BY 'newPass';
+	UPDATE mysql.user SET Password=PASSWORD('new-password-here') WHERE USER='user-name-here
+
+	### Practical implementation
+	mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'Password_7';
+
+### [11] Removing MySQL server
 
 	Suggestion to remove MySQL server with te following:
 

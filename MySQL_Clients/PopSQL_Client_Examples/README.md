@@ -1,4 +1,4 @@
-### PopSQL Client Patterns
+### PopSQL Client Examples
 
 Shows some excerpts from Mike's Dane MySQL course for beginners:
 

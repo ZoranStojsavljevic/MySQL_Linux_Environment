@@ -1,8 +1,8 @@
 ### MySQL Linux Environment
 
 A bit about SQL native "language". SQL "language" is not a true
-programming language, rather a set of the rules formulated as a
-kind of a script.
+programming language, rather a set of rules formulated as kind
+of a scripting language.
 
 This repo attemts to solve some pitfalls with MySQL server Fedora
 setup (as a representative of a MySQL general Linux distros) and
@@ -10,9 +10,9 @@ some MySQL clients' setups as well.
 
 There are also some clients' examples presented in this repo.
 
-I installed the native MySQL client called PopSQL. Also I will
-try to install and use another MySQL client based on Python3's
-connector using pip (phyton installer program) as an installer.
+I installed the native MySQL client called PopSQL. I also
+installed another MySQL client based on Python3's connector using
+pip (phyton installer program) as an installer.
 
 What is a pip? A package-management system written in Python and
 it is used to install and manage software packages. The Python
