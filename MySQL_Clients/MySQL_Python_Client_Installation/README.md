@@ -49,9 +49,32 @@ Client minimal environment.
 I potentially might introduce Python Client IDE for Fedora
 (later). Maybe/if?
 
-### MySQL Python Client Verification
+### Connecting MySQL Python Client to MySQL server
 
-#### The initial test program for MySQL python client verification
+#### [1] MySQL Python server MUST be active (running)
+
+	[vuser@fedora39-ssd-2TB ~]$ systemctl status mysqld
+	● mysqld.service - MySQL 8.0 database server
+	     Loaded: loaded (/usr/lib/systemd/system/mysqld.service; disabled; preset: disabled)
+	    Drop-In: /usr/lib/systemd/system/service.d
+	             └─10-timeout-abort.conf
+	     Active: active (running) since Mon 2023-12-11 14:54:37 CET; 1h 50min ago
+	    Process: 13226 ExecStartPre=/usr/libexec/mysql-check-socket (code=exited, status=0/SUCCESS)
+	    Process: 13248 ExecStartPre=/usr/libexec/mysql-prepare-db-dir mysqld.service (code=exited, status=0/SUCCESS)
+	   Main PID: 13284 (mysqld)
+	     Status: "Server is operational"
+	      Tasks: 40 (limit: 14144)
+	     Memory: 428.2M
+	        CPU: 46.936s
+	     CGroup: /system.slice/mysqld.service
+	             └─13284 /usr/libexec/mysqld --basedir=/usr
+	[vuser@fedora39-ssd-2TB ~]$
+
+If not, the following Linux command must be executed:
+
+	[vuser@fedora39-ssd-2TB ~]$ sudo systemctl restart mysqld	
+
+#### [2] A function to connect to MySQL Server (connect.py)
 
 	#!/usr/bin/python3
 
@@ -73,7 +96,7 @@ I potentially might introduce Python Client IDE for Fedora
 
 	connection = create_server_connection('127.0.0.1', 'root', 'Password_7')
 
-#### The test program results
+#### Connect results (MySQL Python Client to MySQL server)
 
 	[vuser@fedora39-ssd-2TB ~]$ nano connect.py
 	[vuser@fedora39-ssd-2TB ~]$ python
