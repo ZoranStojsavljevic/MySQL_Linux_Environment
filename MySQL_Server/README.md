@@ -1,7 +1,6 @@
 ## Fedora 39 MySQL server installation
-https://docs.fedoraproject.org/en-US/quick-docs/installing-mysql-mariadb/
-
-https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html#yum-repo-installing-mysq
+* [installing-mysql](https://docs.fedoraproject.org/en-US/quick-docs/installing-mysql-mariadb)
+* [yum-repo-installing-mysq](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html#yum-repo-installing-mysq)
 
 ### [1] Remove mariadb server and mariadb server utils
 
@@ -57,10 +56,9 @@ https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html#yum-rep
 
 Since the MySQL server's /etc and /var config files changed over
 the Time, please, check the following net page for possible solutions!
+* [job for mysqld service failed](https://stackoverflow.com/questions/42317139/job-for-mysqld-service-failed-see-systemctl-status-mysqld-service/77589044#77589044)
 
-https://stackoverflow.com/questions/42317139/job-for-mysqld-service-failed-see-systemctl-status-mysqld-service/77589044#77589044
-
-#### Solution which worked for me:
+#### Solution which worked for me
 
 	[vuser@fedora39-ssd-2TB ~]$ cd /var/lib/mysql
 	[vuser@fedora39-ssd-2TB:/var/lib/mysql]$ sudo mkdir '#innodb_redo'

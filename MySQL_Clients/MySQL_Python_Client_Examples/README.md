@@ -2,12 +2,12 @@
 
 Shows some excerpts from Brad's MySQL Python Client course:
 
-https://www.youtube.com/watch?v=BHwgnGEhYG8&t
+* [Python & MySQL Crash Course](https://www.youtube.com/watch?v=BHwgnGEhYG8&t)
 
 The full examples presented/shown by Brad are here (I do my
 own formats/interpretations to better understand the code):
 
-https://gist.github.com/bradtraversy/5ea2fa59776ddc8cf45c536be65d4f86
+* [Brad' MySQL Phyton Client example](https://gist.github.com/bradtraversy/5ea2fa59776ddc8cf45c536be65d4f86)
 
 I did modify this code to intro a bit more compexity, just to
 get an idea what I am facing. The code needs to be polished,

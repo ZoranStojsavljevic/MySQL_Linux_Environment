@@ -287,4 +287,3 @@ mysql> SHOW TABLES in information_schema;
 	| INFO    | varchar(65535)  | YES  |     |         |       |
 	+---------+-----------------+------+-----+---------+-------+
 	8 rows in set (0.00 sec)
-

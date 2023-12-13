@@ -25,10 +25,10 @@ me as a general vague documentation).
 To start MySQL course for the beginners/novices, please, watch
 the following video (an excellent MySQL course from Mike Dane):
 
-https://www.youtube.com/watch?v=HXV3zeQKqGY
+* [An excellent MySQL course from Mike Dane](https://www.youtube.com/watch?v=HXV3zeQKqGY)
 
 	Contents:
-
+```
 	(0:00) Introduction
 	(2:36) What is a Database?
 	(23:10) Tables & Keys
@@ -53,7 +53,7 @@ https://www.youtube.com/watch?v=HXV3zeQKqGY
 	(3:42:12) ER Diagrams Intro
 	(3:55:53) Designing an ER Diagram
 	(4:08:34) Converting ER Diagrams to Schemas
-
+```
 As my genuine signature, I will try to maintain this repo as the
 set of the rolling updates (in this fashion) thru the Time.
 
